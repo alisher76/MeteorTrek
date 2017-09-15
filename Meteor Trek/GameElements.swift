@@ -11,7 +11,7 @@ import GameplayKit
 
 extension GameScene {
     
-    // Mark CreatePlayerMethod
+    // Mark CreatePlayer
     func createPlayer() {
         player = SKSpriteNode(imageNamed: "player")
         guard let playerPosition = tracksArray?.first?.position.y else { return }

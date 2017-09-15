@@ -22,7 +22,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var directionArray = [Bool]()
     var velocityArray = [Int]()
     
-    
     let playerCategory: UInt32   = 0x1 << 0
     let enemyCategory: UInt32    = 0x1 << 1
     let targetCategory: UInt32   = 0x1 << 2
