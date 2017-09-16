@@ -22,7 +22,7 @@ extension GameScene {
         player?.physicsBody?.categoryBitMask = playerCategory
         player?.physicsBody?.collisionBitMask = 0
         player?.physicsBody?.contactTestBitMask = enemyCategory | targetCategory
-        
+        player?.zPosition = 1
         self.addChild(player!)
         
         let pulse = SKEmitterNode(fileNamed: "Pulse")!

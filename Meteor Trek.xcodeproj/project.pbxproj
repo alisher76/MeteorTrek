@@ -40,7 +40,7 @@
 		AC8EB1D01F6AEB6800179259 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
 		AC8EB1D11F6AEB6800179259 /* powerUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerUp.wav; sourceTree = "<group>"; };
 		ACC803191F6B102D001E5D79 /* Pulse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Pulse.sks; sourceTree = "<group>"; };
-		ACC8031B1F6B1087001E5D79 /* fireworks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireworks.sks; sourceTree = "<group>"; };
+		ACC8031B1F6B1087001E5D79 /* Fireworks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fireworks.sks; sourceTree = "<group>"; };
 		ACC8031D1F6C4315001E5D79 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC803191F6B102D001E5D79 /* Pulse.sks */,
-				ACC8031B1F6B1087001E5D79 /* fireworks.sks */,
+				ACC8031B1F6B1087001E5D79 /* Fireworks.sks */,
 			);
 			path = Particles;
 			sourceTree = "<group>";

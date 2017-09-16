@@ -58,16 +58,34 @@ extension GameScene {
         player?.removeAllActions()
         movingToTrack = true
         
-        guard let nextTrack = tracksArray?[currentTrack].position else { return }
+        guard let nextTrack = tracksArray?[currentTrack + 1].position else { return }
         
         if let player = self.player {
             let moveAction = SKAction.move(to: CGPoint(x: player.position.x, y: nextTrack.y) , duration: 0.2)
+            
+            let up = directionArray[currentTrack + 1]
+            
             player.run(moveAction, completion: {
                 self.movingToTrack = false
+                if self.currentTrack != 9 {
+                 self.player?.physicsBody?.velocity = up ? CGVector(dx: self.velocityArray[self.currentTrack], dy: 0) : CGVector(dx: -self.velocityArray[self.currentTrack], dy: 0)
+                } else {
+                 self.player?.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+                }
+                
             })
             currentTrack += 1
             
             self.run(moveSound)
+        }
+    }
+    
+    func movePlayerToStart() {
+        if let player = self.player {
+            player.removeFromParent()
+            self.player = nil
+            self.createPlayer()
+            self.currentTrack = 0
         }
     }
 }
